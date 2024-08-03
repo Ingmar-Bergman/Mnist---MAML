@@ -1,0 +1,19 @@
+Arguments:
+ - Class of the model: <class 'models.ConvNet'>
+ - Number of elemnts per class: 2000
+ - Number of folds: 3
+ - Number of epochs: 120
+ - Learning rate: 0.001
+ - Batch size: 32
+ - Output directory: classification_basique/output/ConvNet/epoch120
+
+Mean Accuracy across 3 folds: 96.52%
+Variance of Accuracy across 3 folds: 0.02
+
+Individual Fold Scores:
+Fold 1 Validation Accuracy: 96.53%
+Fold 1 Results File: fold_1_results_ConvNet.txt
+Fold 2 Validation Accuracy: 96.35%
+Fold 2 Results File: fold_2_results_ConvNet.txt
+Fold 3 Validation Accuracy: 96.70%
+Fold 3 Results File: fold_3_results_ConvNet.txt

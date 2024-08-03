@@ -1,0 +1,168 @@
+Hyperparameters:
+output_dir: Nouvelle_version/MAML/output/SimpleNN/n_inner_iter=1_meta_lr=5e-5
+n_way: 10
+k_spt: 10
+k_qry: 15
+num_classes: 20
+num_elements_per_class: 35
+perc_training_set: 0.7
+task_num: 10
+epochs: 100
+meta_lr: 5e-05
+model_class: ConvNet_Sans_Dropout
+seed: 1
+inner_opt_train_lr: 0.1
+inner_opt_test_lr: 0.1
+n_inner_iter: 3
+
+Accuracy Results:
+Epoch 0.0: Train Accuracy = 11.20%, Test Accuracy = 13.47%
+Epoch 1: Train Accuracy = 12.47%, Test Accuracy = 12.87%
+Epoch 1.5: Train Accuracy = 11.13%, Test Accuracy = 12.73%
+Epoch 2.0: Train Accuracy = 11.07%, Test Accuracy = 13.13%
+Epoch 3: Train Accuracy = 15.07%, Test Accuracy = 10.53%
+Epoch 3.5: Train Accuracy = 11.07%, Test Accuracy = 13.73%
+Epoch 4.0: Train Accuracy = 11.80%, Test Accuracy = 11.07%
+Epoch 5: Train Accuracy = 13.73%, Test Accuracy = 10.73%
+Epoch 5.5: Train Accuracy = 10.47%, Test Accuracy = 13.87%
+Epoch 6.0: Train Accuracy = 11.73%, Test Accuracy = 10.73%
+Epoch 7: Train Accuracy = 14.87%, Test Accuracy = 10.93%
+Epoch 7.5: Train Accuracy = 11.60%, Test Accuracy = 13.67%
+Epoch 8.0: Train Accuracy = 10.80%, Test Accuracy = 10.27%
+Epoch 9: Train Accuracy = 13.73%, Test Accuracy = 10.93%
+Epoch 9.5: Train Accuracy = 11.47%, Test Accuracy = 11.27%
+Epoch 10.0: Train Accuracy = 11.40%, Test Accuracy = 11.40%
+Epoch 11: Train Accuracy = 16.47%, Test Accuracy = 11.27%
+Epoch 11.5: Train Accuracy = 11.40%, Test Accuracy = 11.20%
+Epoch 12.0: Train Accuracy = 11.20%, Test Accuracy = 11.07%
+Epoch 13: Train Accuracy = 13.67%, Test Accuracy = 11.20%
+Epoch 13.5: Train Accuracy = 10.13%, Test Accuracy = 14.80%
+Epoch 14.0: Train Accuracy = 11.53%, Test Accuracy = 11.60%
+Epoch 15: Train Accuracy = 12.27%, Test Accuracy = 10.47%
+Epoch 15.5: Train Accuracy = 10.73%, Test Accuracy = 12.33%
+Epoch 16.0: Train Accuracy = 10.47%, Test Accuracy = 11.67%
+Epoch 17: Train Accuracy = 14.73%, Test Accuracy = 11.67%
+Epoch 17.5: Train Accuracy = 12.40%, Test Accuracy = 13.07%
+Epoch 18.0: Train Accuracy = 10.87%, Test Accuracy = 11.53%
+Epoch 19: Train Accuracy = 11.27%, Test Accuracy = 11.07%
+Epoch 19.5: Train Accuracy = 11.00%, Test Accuracy = 12.47%
+Epoch 20.0: Train Accuracy = 12.20%, Test Accuracy = 10.40%
+Epoch 21: Train Accuracy = 13.13%, Test Accuracy = 10.73%
+Epoch 21.5: Train Accuracy = 10.20%, Test Accuracy = 14.80%
+Epoch 22.0: Train Accuracy = 11.67%, Test Accuracy = 11.33%
+Epoch 23: Train Accuracy = 13.47%, Test Accuracy = 11.53%
+Epoch 23.5: Train Accuracy = 11.33%, Test Accuracy = 13.40%
+Epoch 24.0: Train Accuracy = 11.20%, Test Accuracy = 11.13%
+Epoch 25: Train Accuracy = 11.13%, Test Accuracy = 12.20%
+Epoch 25.5: Train Accuracy = 10.93%, Test Accuracy = 14.27%
+Epoch 26.0: Train Accuracy = 11.20%, Test Accuracy = 12.00%
+Epoch 27: Train Accuracy = 16.80%, Test Accuracy = 9.73%
+Epoch 27.5: Train Accuracy = 11.07%, Test Accuracy = 13.93%
+Epoch 28.0: Train Accuracy = 11.13%, Test Accuracy = 11.93%
+Epoch 29: Train Accuracy = 14.47%, Test Accuracy = 11.53%
+Epoch 29.5: Train Accuracy = 11.47%, Test Accuracy = 14.47%
+Epoch 30.0: Train Accuracy = 11.07%, Test Accuracy = 12.67%
+Epoch 31: Train Accuracy = 12.73%, Test Accuracy = 11.27%
+Epoch 31.5: Train Accuracy = 11.07%, Test Accuracy = 13.93%
+Epoch 32.0: Train Accuracy = 11.33%, Test Accuracy = 11.20%
+Epoch 33: Train Accuracy = 12.60%, Test Accuracy = 10.13%
+Epoch 33.5: Train Accuracy = 12.00%, Test Accuracy = 12.47%
+Epoch 34.0: Train Accuracy = 12.20%, Test Accuracy = 10.73%
+Epoch 35: Train Accuracy = 11.93%, Test Accuracy = 10.07%
+Epoch 35.5: Train Accuracy = 10.87%, Test Accuracy = 13.87%
+Epoch 36.0: Train Accuracy = 11.60%, Test Accuracy = 11.53%
+Epoch 37: Train Accuracy = 12.27%, Test Accuracy = 11.07%
+Epoch 37.5: Train Accuracy = 10.27%, Test Accuracy = 10.87%
+Epoch 38.0: Train Accuracy = 11.53%, Test Accuracy = 10.20%
+Epoch 39: Train Accuracy = 14.73%, Test Accuracy = 10.27%
+Epoch 39.5: Train Accuracy = 11.20%, Test Accuracy = 12.00%
+Epoch 40.0: Train Accuracy = 11.53%, Test Accuracy = 10.33%
+Epoch 41: Train Accuracy = 12.40%, Test Accuracy = 11.00%
+Epoch 41.5: Train Accuracy = 11.73%, Test Accuracy = 12.73%
+Epoch 42.0: Train Accuracy = 11.40%, Test Accuracy = 11.00%
+Epoch 43: Train Accuracy = 12.27%, Test Accuracy = 11.47%
+Epoch 43.5: Train Accuracy = 10.80%, Test Accuracy = 12.47%
+Epoch 44.0: Train Accuracy = 10.40%, Test Accuracy = 11.67%
+Epoch 45: Train Accuracy = 10.20%, Test Accuracy = 10.07%
+Epoch 45.5: Train Accuracy = 11.07%, Test Accuracy = 14.80%
+Epoch 46.0: Train Accuracy = 11.00%, Test Accuracy = 12.53%
+Epoch 47: Train Accuracy = 14.60%, Test Accuracy = 11.67%
+Epoch 47.5: Train Accuracy = 11.20%, Test Accuracy = 12.20%
+Epoch 48.0: Train Accuracy = 10.20%, Test Accuracy = 11.53%
+Epoch 49: Train Accuracy = 13.80%, Test Accuracy = 11.13%
+Epoch 49.5: Train Accuracy = 11.13%, Test Accuracy = 12.40%
+Epoch 50.0: Train Accuracy = 10.33%, Test Accuracy = 10.40%
+Epoch 51: Train Accuracy = 14.60%, Test Accuracy = 11.60%
+Epoch 51.5: Train Accuracy = 11.40%, Test Accuracy = 15.60%
+Epoch 52.0: Train Accuracy = 11.20%, Test Accuracy = 10.07%
+Epoch 53: Train Accuracy = 10.87%, Test Accuracy = 11.67%
+Epoch 53.5: Train Accuracy = 12.13%, Test Accuracy = 13.20%
+Epoch 54.0: Train Accuracy = 10.80%, Test Accuracy = 10.40%
+Epoch 55: Train Accuracy = 12.40%, Test Accuracy = 10.93%
+Epoch 55.5: Train Accuracy = 10.73%, Test Accuracy = 12.13%
+Epoch 56.0: Train Accuracy = 9.67%, Test Accuracy = 10.07%
+Epoch 57: Train Accuracy = 12.73%, Test Accuracy = 11.73%
+Epoch 57.5: Train Accuracy = 11.07%, Test Accuracy = 11.33%
+Epoch 58.0: Train Accuracy = 10.67%, Test Accuracy = 11.07%
+Epoch 59: Train Accuracy = 12.33%, Test Accuracy = 11.47%
+Epoch 59.5: Train Accuracy = 11.27%, Test Accuracy = 13.53%
+Epoch 60.0: Train Accuracy = 10.67%, Test Accuracy = 10.53%
+Epoch 61: Train Accuracy = 10.60%, Test Accuracy = 10.53%
+Epoch 61.5: Train Accuracy = 11.40%, Test Accuracy = 13.00%
+Epoch 62.0: Train Accuracy = 11.20%, Test Accuracy = 10.47%
+Epoch 63: Train Accuracy = 13.20%, Test Accuracy = 11.47%
+Epoch 63.5: Train Accuracy = 11.40%, Test Accuracy = 13.67%
+Epoch 64.0: Train Accuracy = 11.60%, Test Accuracy = 10.73%
+Epoch 65: Train Accuracy = 13.20%, Test Accuracy = 11.67%
+Epoch 65.5: Train Accuracy = 10.33%, Test Accuracy = 11.80%
+Epoch 66.0: Train Accuracy = 11.73%, Test Accuracy = 11.60%
+Epoch 67: Train Accuracy = 14.67%, Test Accuracy = 10.80%
+Epoch 67.5: Train Accuracy = 11.13%, Test Accuracy = 13.87%
+Epoch 68.0: Train Accuracy = 9.87%, Test Accuracy = 10.47%
+Epoch 69: Train Accuracy = 12.00%, Test Accuracy = 11.20%
+Epoch 69.5: Train Accuracy = 11.27%, Test Accuracy = 12.73%
+Epoch 70.0: Train Accuracy = 10.87%, Test Accuracy = 10.13%
+Epoch 71: Train Accuracy = 12.07%, Test Accuracy = 11.33%
+Epoch 71.5: Train Accuracy = 12.13%, Test Accuracy = 12.47%
+Epoch 72.0: Train Accuracy = 11.20%, Test Accuracy = 10.80%
+Epoch 73: Train Accuracy = 12.60%, Test Accuracy = 11.60%
+Epoch 73.5: Train Accuracy = 10.87%, Test Accuracy = 12.67%
+Epoch 74.0: Train Accuracy = 10.27%, Test Accuracy = 10.20%
+Epoch 75: Train Accuracy = 10.93%, Test Accuracy = 11.73%
+Epoch 75.5: Train Accuracy = 10.67%, Test Accuracy = 11.47%
+Epoch 76.0: Train Accuracy = 11.67%, Test Accuracy = 11.87%
+Epoch 77: Train Accuracy = 12.93%, Test Accuracy = 12.00%
+Epoch 77.5: Train Accuracy = 11.07%, Test Accuracy = 10.87%
+Epoch 78.0: Train Accuracy = 12.73%, Test Accuracy = 11.67%
+Epoch 79: Train Accuracy = 12.07%, Test Accuracy = 10.73%
+Epoch 79.5: Train Accuracy = 10.87%, Test Accuracy = 12.60%
+Epoch 80.0: Train Accuracy = 10.73%, Test Accuracy = 11.93%
+Epoch 81: Train Accuracy = 11.40%, Test Accuracy = 11.27%
+Epoch 81.5: Train Accuracy = 11.40%, Test Accuracy = 12.20%
+Epoch 82.0: Train Accuracy = 10.93%, Test Accuracy = 10.53%
+Epoch 83: Train Accuracy = 13.67%, Test Accuracy = 11.13%
+Epoch 83.5: Train Accuracy = 11.20%, Test Accuracy = 11.13%
+Epoch 84.0: Train Accuracy = 11.33%, Test Accuracy = 10.67%
+Epoch 85: Train Accuracy = 12.73%, Test Accuracy = 11.53%
+Epoch 85.5: Train Accuracy = 10.67%, Test Accuracy = 12.53%
+Epoch 86.0: Train Accuracy = 11.20%, Test Accuracy = 12.13%
+Epoch 87: Train Accuracy = 12.13%, Test Accuracy = 12.13%
+Epoch 87.5: Train Accuracy = 11.40%, Test Accuracy = 14.60%
+Epoch 88.0: Train Accuracy = 12.27%, Test Accuracy = 10.33%
+Epoch 89: Train Accuracy = 12.80%, Test Accuracy = 10.93%
+Epoch 89.5: Train Accuracy = 11.93%, Test Accuracy = 13.67%
+Epoch 90.0: Train Accuracy = 11.13%, Test Accuracy = 12.20%
+Epoch 91: Train Accuracy = 13.80%, Test Accuracy = 10.20%
+Epoch 91.5: Train Accuracy = 11.20%, Test Accuracy = 12.80%
+Epoch 92.0: Train Accuracy = 11.93%, Test Accuracy = 11.87%
+Epoch 93: Train Accuracy = 12.40%, Test Accuracy = 11.40%
+Epoch 93.5: Train Accuracy = 11.07%, Test Accuracy = 14.27%
+Epoch 94.0: Train Accuracy = 12.53%, Test Accuracy = 10.73%
+Epoch 95: Train Accuracy = 13.33%, Test Accuracy = 10.13%
+Epoch 95.5: Train Accuracy = 10.13%, Test Accuracy = 13.13%
+Epoch 96.0: Train Accuracy = 11.53%, Test Accuracy = 12.13%
+Epoch 97: Train Accuracy = 11.20%, Test Accuracy = 12.33%
+Epoch 97.5: Train Accuracy = 11.00%, Test Accuracy = 14.87%
+Epoch 98.0: Train Accuracy = 11.40%, Test Accuracy = 10.00%
+Epoch 99: Train Accuracy = 14.27%, Test Accuracy = 11.20%
+Epoch 99.5: Train Accuracy = 10.87%, Test Accuracy = 12.27%

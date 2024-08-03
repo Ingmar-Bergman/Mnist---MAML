@@ -1,0 +1,32 @@
+Hyperparameters:
+output_dir: classification_basique/output/ConvNet_sans_dropout/epoch20
+epochs: 20
+lr: 0.001
+seed: 1
+num_classes: 25
+test_split: 0.3
+num_elements_per_class: 2000
+batch_size: 32
+scheduler: none
+
+Accuracy Results:
+Epoch 1: Train Accuracy = 64.81%, Test Accuracy = 84.57%
+Epoch 2: Train Accuracy = 92.22%, Test Accuracy = 93.17%
+Epoch 3: Train Accuracy = 96.20%, Test Accuracy = 94.69%
+Epoch 4: Train Accuracy = 97.68%, Test Accuracy = 93.43%
+Epoch 5: Train Accuracy = 98.29%, Test Accuracy = 94.19%
+Epoch 6: Train Accuracy = 98.65%, Test Accuracy = 95.48%
+Epoch 7: Train Accuracy = 98.87%, Test Accuracy = 95.86%
+Epoch 8: Train Accuracy = 98.96%, Test Accuracy = 94.25%
+Epoch 9: Train Accuracy = 98.99%, Test Accuracy = 95.57%
+Epoch 10: Train Accuracy = 99.16%, Test Accuracy = 95.96%
+Epoch 11: Train Accuracy = 99.23%, Test Accuracy = 95.47%
+Epoch 12: Train Accuracy = 99.27%, Test Accuracy = 95.67%
+Epoch 13: Train Accuracy = 99.19%, Test Accuracy = 96.10%
+Epoch 14: Train Accuracy = 99.51%, Test Accuracy = 96.32%
+Epoch 15: Train Accuracy = 99.29%, Test Accuracy = 95.96%
+Epoch 16: Train Accuracy = 99.58%, Test Accuracy = 96.56%
+Epoch 17: Train Accuracy = 99.58%, Test Accuracy = 96.20%
+Epoch 18: Train Accuracy = 99.47%, Test Accuracy = 96.53%
+Epoch 19: Train Accuracy = 99.58%, Test Accuracy = 96.61%
+Epoch 20: Train Accuracy = 99.55%, Test Accuracy = 95.30%

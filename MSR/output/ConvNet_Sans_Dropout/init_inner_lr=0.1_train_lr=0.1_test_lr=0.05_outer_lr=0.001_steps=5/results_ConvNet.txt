@@ -1,0 +1,23 @@
+Hyperparameters:
+output_dir: Nouvelle_version/MSR/output/ConvNet_Sans_Dropout/init_inner_lr=0.1_train_lr=0.1_test_lr=0.05_outer_lr=0.001_steps=5
+n_way: 10
+k_spt: 10
+k_qry: 15
+num_elements_per_class: 35
+task_num: 10
+num_classes: 20
+model_class: ConvNet
+seed: 1
+init_inner_lr: 0.1
+inner_opt_builder_train_lr: 0.1
+inner_opt_builder_test_lr: 0.05
+outer_lr: 0.001
+num_inner_steps: 5
+num_epochs: 3
+
+Accuracy Results:
+Epoch 0.0: Train Accuracy = 33.53%, Test Accuracy = 34.73%
+Epoch 1: Train Accuracy = 75.73%, Test Accuracy = 36.80%
+Epoch 1.5: Train Accuracy = 39.07%, Test Accuracy = 73.87%
+Epoch 2.0: Train Accuracy = 39.07%, Test Accuracy = 40.53%
+Epoch 3: Train Accuracy = 74.67%, 
