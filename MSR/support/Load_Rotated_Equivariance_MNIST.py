@@ -191,7 +191,7 @@ class MNISTNShot:
         self.x=[]
 
         # print first element of temp.items()
-        print("First element of temp.items():", list(temp.items())[0])
+        # print("First element of temp.items():", list(temp.items())[0])
 
 
         #iterate on temp.items()
@@ -199,7 +199,7 @@ class MNISTNShot:
             self.x.append(np.array(imgs)) #voir si np.array est utile ici
         
         # as different class may have different number of imgs
-        self.x = np.stack(self.x).astype(np.float)  # [[n imgs],..., xx classes in total]
+        self.x = np.stack(self.x).astype(float)  # [[n imgs],..., xx classes in total]
         # each character contains 20 imgs
         
         print('data shape:', self.x.shape)  #{10, 20, 1, 1, 32, 32]
@@ -330,11 +330,11 @@ class MNISTNShot:
             # Convertit les listes en tableaux numpy et les reshape aux dimensions nécessaires
             # [b, setsz, 1, 84, 84]
             x_spts = np.array(x_spts).astype(np.float32).reshape(self.batchsz, setsz, 1, self.resize, self.resize)
-            y_spts = np.array(y_spts).astype(np.int).reshape(self.batchsz, setsz)
+            y_spts = np.array(y_spts).astype(int).reshape(self.batchsz, setsz)
 
             # [b, qrysz, 1, 84, 84]
             x_qrys = np.array(x_qrys).astype(np.float32).reshape(self.batchsz, querysz, 1, self.resize, self.resize)
-            y_qrys = np.array(y_qrys).astype(np.int).reshape(self.batchsz, querysz)
+            y_qrys = np.array(y_qrys).astype(int).reshape(self.batchsz, querysz)
 
             x_spts, y_spts, x_qrys, y_qrys = [
                 torch.from_numpy(z).to(self.device) for z in

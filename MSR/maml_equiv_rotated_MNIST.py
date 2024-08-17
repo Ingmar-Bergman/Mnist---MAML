@@ -39,6 +39,8 @@ import matplotlib.pyplot as plt
 plt.style.use('bmh')
 import os 
 import torch
+torch.cuda.empty_cache()
+
 from torch import nn
 import torch.nn.functional as F
 import torch.optim as optim
@@ -82,6 +84,7 @@ def main(args):
 
     dataset=RotatedMNIST(root="data", train=True, transform=transform_pipeline, download=True, num_classes= args.num_classes, num_elements_per_class= args.num_elements_per_class)
 
+    print(device)
 #Vérifier le training set et le dataset ici
 
     db = MNISTNShot(dataset,  # Assuming training_data is loaded with rotated MNIST
@@ -102,7 +105,7 @@ def main(args):
     
 
 
-    net = ConvNet_with_Dropout(args.n_way).to(device)
+    net = args.model_class(args.n_way).to(device)
 
     # We will use Adam to (meta-)optimize the initial parameters
     # to be adapted.
@@ -135,20 +138,20 @@ def main(args):
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--output_dir', type=str, help='Directory to save output files', default='Nouvelle_version/MSR/output/ConvNet'),
-    argparser.add_argument('--n_way', type=int, help='n way', default=10) #par défaut 5
-    argparser.add_argument('--k_spt', type=int, help='k shot for support set', default=10) #par défaut 5
+    argparser.add_argument('--n_way', type=int, help='n way', default=10) #par défaut 10
+    argparser.add_argument('--k_spt', type=int, help='k shot for support set', default=10) #par défaut 10
     argparser.add_argument('--k_qry', type=int, help='k shot for query set', default=15) #par défaut 15
-    argparser.add_argument('--num_elements_per_class', type=int, help='number of elements per class', default=35) #par défaut 20
-    argparser.add_argument('--task_num', type=int, help='meta batch size, namely task num', default=10) #DE BASE CEST A 32
+    argparser.add_argument('--num_elements_per_class', type=int, help='number of elements per class', default=35) #par défaut 35
+    argparser.add_argument('--task_num', type=int, help='meta batch size, namely task num', default=32) #DE BASE CEST A 32
     argparser.add_argument('--num_classes', type=int, help='number of classes', default=20) #par défaut 20
     argparser.add_argument('--model_class', type=str, help='model class', default='ConvNet')
     argparser.add_argument('--seed', type=int, help='random seed', default=1) #par défaut 1
-    argparser.add_argument('--init_inner_lr', type=float, help='initial inner learning rate', default=1e-3) #par défaut 0.1
+    argparser.add_argument('--init_inner_lr', type=float, help='initial inner learning rate', default=0.1) #par défaut 0.1
     argparser.add_argument('--inner_opt_builder_train_lr', type=float, help='inner optimization training learning rate', default=0.1) #par défaut 0.1
     argparser.add_argument('--inner_opt_builder_test_lr', type=float, help='inner optimization test learning rate', default=0.1) #par défaut 0.1
     argparser.add_argument('--outer_lr', type=float, help='outer learning rate', default=1e-3) #par défaut 1e-3
     argparser.add_argument('--num_inner_steps', type=int, help='number of inner loop steps', default=5) #par défaut 5
-    argparser.add_argument('--num_epochs', type=int, help='number of epochs', default=60) #par défaut 50
+    argparser.add_argument('--num_epochs', type=int, help='number of epochs', default=50) #par défaut 50
     args = argparser.parse_args()
 
     # init_inner_lr_values = [0.1,0.001,0.0001]
@@ -162,7 +165,7 @@ if __name__ == '__main__':
     inner_opt_builder_train_lr_values = [0.1]
     inner_opt_builder_test_lr_values = [0.1]
     outer_lr_values = [1e-3]
-    num_inner_steps_values = [7,9,11,13]
+    num_inner_steps_values = [5]
     num_epochs_values = [70]
 
 
@@ -179,7 +182,7 @@ if __name__ == '__main__':
                             args.outer_lr = outer_lr
                             args.num_inner_steps = num_inner_steps
                             args.num_epochs = num_epochs
-                            args.output_dir = f'Nouvelle_version/MSR/augment/output/ConvNet_with_Dropout/init_inner_lr={init_inner_lr}_train_lr={inner_opt_builder_train_lr}_test_lr={inner_opt_builder_test_lr}_outer_lr={outer_lr}_steps={num_inner_steps}'
+                            args.output_dir = f'MSR/augment/output/ConvNet_with_Dropout/TESTCUDA_init_inner_lr={init_inner_lr}_train_lr={inner_opt_builder_train_lr}_test_lr={inner_opt_builder_test_lr}_outer_lr={outer_lr}_steps={num_inner_steps}'
                             os.makedirs(args.output_dir, exist_ok=True)
                             main(args)
 

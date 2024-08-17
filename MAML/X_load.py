@@ -7,7 +7,7 @@ import numpy as np
 import os
 import random
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
 # transform = transforms.Compose([
 #     lambda x: Image.open(x).convert('L'),  # Open image and convert to grayscale
@@ -212,7 +212,7 @@ class MNISTNShot:
         
         # as different class may have different number of imgs
         
-        self.x = np.stack(self.x).astype(np.float)  # [[n imgs],..., xx classes in total]
+        self.x = np.stack(self.x).astype(float)  # [[n imgs],..., xx classes in total]
         # each character contains num_elements_per_class imgs
         
         print('data shape:', self.x.shape)  #{10, num_elements_per_class, 1, imgsz, imgsz]
